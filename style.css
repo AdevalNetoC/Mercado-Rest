@@ -6,12 +6,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #E9EFEF;
 }
 
 /* Estilos do cabeçalho */
 header {
-    background-color: #542E71;
+    background-color: #246814;
     color: white;
     padding: 20px 0;
 }
@@ -88,4 +88,40 @@ h2 {
 }
 
 .product-card button {
-   
+    background-color: #246814; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para a mudança de cor */
+}
+
+.product-card button:hover {
+    background-color: #1b4d0a; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #246814;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Fixa o rodapé na tela */
+    bottom: 0; /* Posiciona o rodapé na parte inferior */
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    width: 100%; /* Largura total */
+    z-index: 1000; /* Garante que o rodapé fique acima de outros elementos */
+}
+
+/* Estilos de responsividade */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta para telas menores */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Reduz o espaçamento dos itens do menu */
+    }
+}
